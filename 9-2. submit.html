@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8">
+    <meta name="viewport" content="wid=device-width", initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatiable" content="ie-edge">
+    <title>Animation</title>
+  <style>
+        .father{display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;}
+       
+        .button{
+        width: 300px;
+        height: 100px;
+        border: 0px;
+        margin: 0px;
+        border-radius: 100px;
+        font-size: 35px;
+        background-color: gray;
+        color: white;
+    }
+        .button:hover{
+        animation: 1s shadow infinite ease-in-out;
+    }
+      @keyframes shadow{
+        0%{
+         transform: none;
+        }
+        50%{
+          box-shadow: 2px 2px 2px 2px lightgray;
+          background-color: lightslategray;
+        }
+        100%{
+         transform: none;
+        }}
+
+      .nico{
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+      }
+      .nico:hover{
+        animation: 10s nico-shadow infinite ease-in-out;
+    }
+      @keyframes nico-shadow{
+        0%{
+         transform: none;
+        }
+        10%{
+         border: 1px solid black;
+        }
+        20%{
+         border: 2px solid black;
+        }
+        30%{
+         border: 3px solid black;
+        }
+        40%{
+         border: 4px solid black;
+        }
+        50%{
+            transform: rotate(0.375turn) scale(0.5, 0.5);
+            border: 5px solid black;
+        }
+        60%{
+         border: 4px solid black;
+        }
+        70%{
+         border: 3px solid black;
+        }
+        80%{
+         border: 2px solid black;
+        }
+        90%{
+         border: 1px solid black;
+        }
+        100%{
+         transform: none;
+        }}
+
+</style>
+  <body>
+    <div class="father">
+    <button class="button">I'm a button </button>
+    <img src="https://avatars2.githubusercontent.com/u/3612017?v=4" class="nico"></img>
+    </div>
+</body>
+</html>

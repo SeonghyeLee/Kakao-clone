@@ -1,0 +1,38 @@
+h1{color: green;
+font-size: 10px;}
+body {
+    font-family: sans-serif;
+    height: 1500px;
+}
+body,html{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+.RedBox {
+    background-color: #FF7979;
+    width: 100%;
+    height: 150px;
+    position: fixed;
+}
+.BlueBox {
+    background-color: #7ED6DF;
+    width: 100%;
+    height: 90%;
+    padding-top: 150px;
+    position: relative;
+}
+.BlueBox2 {
+    background-color: #7ED6DF;
+    font-size: 50px;
+    color: white;
+    padding: 50px;
+    display: inline-block;
+}
+.YellowBox {
+    background-color: #FFCC00;
+    width: 30%;
+    height: 90%;
+    position: absolute;
+    right: 0;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8">
+    <meta name="viewport" content="wid=device-width", initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatiable" content="ie-edge">
+    <title>animation</title>
+  <style>
+    body,html{
+    height:100%;
+    padding: 0;
+    margin: 0;
+    }
+    .father1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        background-color: #76C4C6;
+      }
+      .dot1{
+        width: 10px;
+        height: 10px;
+        border: 0px;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: white;
+        animation: 1s locationchanges infinite ease-in-out;
+      }
+
+      @keyframes  locationchanges{
+        0%{
+         transform: none;
+        } 
+        25%{
+          transform: translate(30px, -30px);
+        }
+        50%{
+          transform: translate(60px, 0px);
+        }
+        75%{
+          transform: translate(30px, 30px);
+        }
+        100%{
+          transform: none;
+        }
+      }
+      .dot{
+        width: 10px;
+        height: 10px;
+        border: 0px;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: white;
+     }
+     .dot2{
+        width: 10px;
+        height: 10px;
+        border: 0px;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: white;
+        animation: 1s locationchanges2 infinite ease-in-out;
+      }
+      
+      @keyframes  locationchanges2{
+        0%{
+         transform: none;
+        } 
+        25%{
+          transform: translate(-30px, 30px);
+        }
+        50%{
+          transform: translate(-60px, 0px);
+        }
+        75%{
+          transform: translate(-30px, -30px);
+        }
+        100%{
+          transform: none;
+        }
+      }
+  </style>
+  </head>
+<body>
+    <div class="father1">
+      <div class="dot1"></div>
+      <div class="dot"></div>
+      <div class="dot2"></div>
+      </div>
+    </div>
+</body>
+</html>

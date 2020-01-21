@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8">
+    <meta name="viewport" content="wid=device-width", initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatiable" content="ie-edge">
+    <title>animation</title>
+  <style>
+    body,html{
+    height:100%;
+    padding: 0;
+    margin: 0;
+    }
+    .father1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 50%;
+        width: 100%;
+        background-color: #76C4C6;
+     }
+      .smallbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 30%;
+        width: 30%;
+        background-color: #76C4C6;
+        animation: 1s locationchanges infinite ease-in-out;
+      }
+      .dot{
+        width: 10px;
+        height: 10px;
+        border: 0px;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: white;
+       }
+      
+      @keyframes  locationchanges{
+       0%{transform:rotate(0deg);}
+       50%{transform:rotate(180deg);}
+       100%{transform:rotate(180deg);}
+       }
+      .father2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 50%;
+        width: 100%;
+        background-color: #1EAC9C;
+      }
+      .stick1{
+        width: 20px;
+        height: 80px;
+        border: 0px;
+        margin: 5px;
+        background-color: white;
+        animation: 1.5s stickchange infinite ease-in-out;
+      }
+      .stick2{
+        width: 20px;
+        height: 80px;
+        border: 0px;
+        margin: 5px;
+        background-color: white;
+        animation: 1.5s stickchange infinite ease-in-out;
+        animation-delay: 0.125s;
+      }
+      .stick3{
+        width: 20px;
+        height: 80px;
+        border: 0px;
+        margin: 5px;
+        background-color: white;
+        animation: 1.5s stickchange infinite ease-in-out;
+        animation-delay: 0.25s;
+      }
+      .stick4{
+        width: 20px;
+        height: 80px;
+        border: 0px;
+        margin: 5px;
+        background-color: white;
+        animation: 1.5s stickchange infinite ease-in-out;
+        animation-delay: 0.375s;
+      }
+      .stick5{
+        width: 20px;
+        height: 80px;
+        border: 0px;
+        margin: 5px;
+        background-color: white;
+        animation: 1.5s stickchange infinite ease-in-out;
+        animation-delay: 0.5s;
+      }
+
+      @keyframes  stickchange{
+        0%{
+         transform: none;
+        } 
+        15%{
+          transform: scale(1, 2);
+        }
+        30%{
+          transform: none;
+        }
+        100%{
+          transform: none;
+        }
+      }
+  </style>
+  </head>
+<body>
+    <div class="father1">
+        <div class="smallbox">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+     </div>
+    </div>
+    <div class="father2">
+        <div class="stick1"></div>
+        <div class="stick2"></div>
+        <div class="stick3"></div>
+        <div class="stick4"></div>
+        <div class="stick5"></div>
+        </div>
+      </div>
+</body>
+</html>
