@@ -1,0 +1,144 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+body{
+    background-color: white;
+    color: #020202;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+
+.total{
+    Width: 300px;
+    height: 600px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #F7F7F7;
+}
+
+.header h1{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.user_idpw .user_idpw__id{
+    Width: 100%;
+    height: 30px;
+    display: inline-block;
+    margin-top: 60px;
+}
+
+.user_idpw .user_idpw__pw{
+    Width: 100%;
+    height: 30px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.header h2{
+    font-size: 12px;
+    font-weight: 600;
+    text-align: right;
+    padding-top: 15px;
+    padding-left: 10%;
+    color: red;
+}
+
+.dontforget {
+    padding-top: 15px;
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.dontforget__box{
+    width:10px;
+    height:10px;
+    border: 0.3px solid lightslategray;
+    position: relative;
+}
+
+.dontforget__box i{
+    font-size: 10px;
+    color: red;
+    position: absolute;
+    top: 1px;
+    left: 0.5px;
+}
+
+.header h6{
+    font-size: 10px;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 5px;
+    color:  lightslategray;
+}
+
+.total .buttons__signin{
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+}
+
+.buttons__signin .user__button{
+    color: white;
+    font-size: 10px;
+    background-color: red;
+    width: 100%;
+    height: 35px;
+    border-radius: 35px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 35px;
+    vertical-align: middle;
+  }
+
+.or h3{font-size: 10px;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.total .button__otherways{
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+}
+
+.button__otherways .button__otherway{
+    color: white;
+    font-size: 10px;
+    background-color: #3D508A;
+    width: 45%;
+    height: 35px;
+    border-radius: 35px;
+    text-align: center;
+    line-height: 35px;
+    vertical-align: middle;
+
+
+}
+
+.button__otherways .button__otherway:last-child {
+    background-color: #5298F0
+}
+  
+.addtion h4{
+    display: inline-block;
+    color:lightslategray;
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+.addtion h5{
+    display: inline-block;
+    color:red;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}

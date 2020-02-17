@@ -1,0 +1,42 @@
+justify-content
+
+flex-start: 요소들을 컨테이너의 왼쪽으로 정렬합니다.
+flex-end: 요소들을 컨테이너의 오른쪽으로 정렬합니다.
+center: 요소들을 컨테이너의 가운데로 정렬합니다.
+space-between: 요소들 사이에 동일한 간격을 둡니다.
+space-around: 요소들 주위에 동일한 간격을 둡니다.
+
+
+align-items
+
+flex-start: 요소들을 컨테이너의 꼭대기로 정렬합니다.
+flex-end: 요소들을 컨테이너의 바닥으로 정렬합니다.
+center: 요소들을 컨테이너의 세로선 상의 가운데로 정렬합니다.
+baseline: 요소들을 컨테이너의 시작 위치에 정렬합니다.
+stretch: 요소들을 컨테이너에 맞도록 늘립니다.
+
+
+flex-direction
+
+row: 요소들을 텍스트의 방향과 동일하게 정렬합니다.
+row-reverse: 요소들을 텍스트의 반대 방향으로 정렬합니다.  (<<display: flex;로 자식 box들을 지정해줘야한다는거!)
+column: 요소들을 위에서 아래로 정렬합니다.
+column-reverse: 요소들을 아래에서 위로 정렬합니다.
+
+(flex-direction:column 을 쓰게 되면 justfy-content가 정렬된 방식을 기준으로 함으로 수직으로 적용
+align-items는 수평으로 적용, row가 default 입니다. row일때는 반대예요.
+
+order
+<interge> (...-0, 1 (default), 1, ...)
+
+
+박스가 사이드로 옆에 있는걸 원치 않고
+박스 들이 밑으로 떨어졌으면 좋겠는데 플렉스가 있었으면 좋겠어
+
+    flex-direction: column;
+
+flex 쓰면 짜그라들면서 
+  flex-wrap: no-wrap;이 디폴트고 한 줄로 정렬되면서 축소가 되는데 난 이게 싫다!  화면 폭 맞춰서 그냥 정렬 되고 나머지 건 밑으로 툭 떨어지게 하고 싶다!
+  flex-wrap: wrap;을 쓰면 됨.
+
+ 이걸 리버스로 쓸 수도 있음! 근데 일단 자식새끼들을 display: flex로 맞춰야 하는 것이지요!

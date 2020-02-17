@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+  }
+
+.cal {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap:wrap;
+    margin: 50px;
+}
+
+.cal .cal__box {
+    background-color:#363439;
+    color: white;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin : 5px;
+    border-radius: 4px;
+}
+
+.cal .op__clear {
+    background-color:#363439;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    margin : 5px;
+    border-radius: 4px;
+}
+
+.cal .display__number,
+.cal .display__conclution{
+    width: 185px;
+    height: 20px;
+    font-size: 18px;
+    margin: 5px;
+    text-align: center;
+}

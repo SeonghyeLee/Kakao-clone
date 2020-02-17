@@ -1,0 +1,193 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700,800&display=swap');
+
+* {box-sizing: border-box;}
+
+
+.text h1{
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.text h2{
+    color: #E9466E;
+    font-size: 10px;
+}
+
+.button{
+    width:60px;
+    height:16px;
+    font-size: 8px;
+    background-color:#E9466E;
+    color: white;
+    text-align: center;
+    line-height: 15px;
+    margin: 10px;
+}
+
+/* 위의 정보는 색상지정용 */
+
+
+.camera {
+    width:200px;
+    height:150px;
+    position: relative;
+    margin: 25px 50px;
+}
+
+.camera .camera__img{
+    width:200px;
+    height:150px;
+    background-color: #08867F;
+    color: white;
+    text-align: center;
+    line-height: 150px;
+    font-size: 60px;
+}
+
+.camera .camera__inform{
+    width:200px;
+    height:150px;
+    background-color:#283A48;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+}
+
+.camera__inform .text{
+    text-align: center;
+    margin: 30px;
+}
+
+.camera .camera__inform:hover{
+    animation: showing .5s ease-out forwards; 
+}
+
+@keyframes showing{
+    from{opacity:0}
+    to{opacity:1}
+}
+
+
+
+.game {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    margin: 25px 50px;
+    overflow: hidden;
+}
+
+
+.game .game__inform{
+    width:200px;
+    height:50px;
+    background-color: #283A48;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: absolute;
+    top: 150px;
+}
+
+.game .game__img{
+    width:200px;
+    height:150px;
+    background-color:#F8A3A0;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    line-height: 150px;
+    font-size: 60px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.game__inform .text{
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 5px;}
+
+.game__inform .button{
+    margin-top: 15px;}
+
+
+.game .game__img:hover{
+    animation: shorter .5s ease-out forwards; 
+}
+
+@keyframes shorter{
+    from{height:150px}
+    to{height:100px}
+}
+
+.game .game__img:hover ~.game__inform{
+    animation: upper .5s ease-out forwards; 
+}
+
+@keyframes upper{
+    from{top: 150px}
+    to{top: 100px}
+}
+
+
+.safari {
+    width:200px;
+    height:150px;
+    position: relative;
+    margin: 25px 50px;
+}
+
+
+.safari .safari__inform{
+    width:200px;
+    height:150px;
+    background-color: #283A48;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.safari .safari__img{
+    width:200px;
+    height:150px;
+    background-color:#D6EFF9;
+    color:white;
+    text-align: center;
+    line-height: 150px;
+    font-size: 60px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.safari__inform .text{
+    text-align: center;
+    margin-top: 90px;
+    margin-left: 5px;}
+
+.safari__inform .button{
+    margin-top: 125px;}
+
+
+.safari .safari__img:hover{
+    animation: smaller .5s ease-out forwards; 
+}
+
+@keyframes smaller{
+    from{transform:scale(1, 1)}
+    to{transform:scale(0.5, 0.5) translateY(-40px)}
+}
+
+
+
+
